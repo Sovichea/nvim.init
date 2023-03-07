@@ -232,6 +232,9 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
+
+      -- { "luisiacc/gruvbox-baby" },
+      { "LunarVim/synthwave84.nvim" },
     },
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
@@ -249,11 +252,11 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {  -- overrides `require("treesitter").setup(...)`
-      -- ensure_installed = { "lua" },
+      ensure_installed = { "lua", "c", "vim", "devicetree", "cmake", "yaml" },
     },
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
-      -- ensure_installed = { "sumneko_lua" },
+      ensure_installed = { "sumneko_lua", "cmake", "clangd", "yamlls" },
     },
     -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
     ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
@@ -264,7 +267,12 @@ local config = {
     },
     ["toggleterm"] = {
       shell = "nu",
-    }
+    },
+    ["indent-o-matic"] = {
+      filetype_lua = {
+        standard_widths = { 2 }
+      },
+    },
   },
   -- LuaSnip Options
   luasnip = {
