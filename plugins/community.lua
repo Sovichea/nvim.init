@@ -23,6 +23,7 @@ return {
         overseer = true,
         lsp_trouble = true,
         ts_rainbow2 = true,
+
       },
     },
   },
@@ -38,4 +39,5 @@ return {
   },
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+  { import = "astrocommunity.bars-and-lines.feline-nvim" },
 }
