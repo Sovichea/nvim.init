@@ -13,7 +13,6 @@ return {
     "catppuccin",
     opts = {
       integrations = {
-        sandwich = false,
         noice = true,
         mini = true,
         leap = true,
@@ -23,7 +22,18 @@ return {
         overseer = true,
         lsp_trouble = true,
         ts_rainbow2 = true,
-
+        barbar = true,
+        beacon = true,
+        dashboard = true,
+        gitsigns = true,
+        mason = true,
+        notify = true,
+        nvimtree = true,
+        symbols_outline = true,
+        telescope = true,
+        treesitter = true,
+        treesitter_context = true,
+        which_key = true,
       },
     },
   },
