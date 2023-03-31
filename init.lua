@@ -75,5 +75,11 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.filetype.add {
+      extension = {
+        overlay = "devicetree",
+        conf = "Kconfig",
+      },
+    }
   end,
 }

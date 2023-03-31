@@ -10,6 +10,13 @@ return {
   --   end,
   -- },
   {
+    "barklan/capslock.nvim",
+    event = "BufRead",
+    config = function()
+      require("capslock").setup()
+    end,
+  },
+  {
     "freddiehaddad/feline.nvim",
     config = function()
       local ctp_feline = require('catppuccin.groups.integrations.feline')
